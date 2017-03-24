@@ -160,10 +160,6 @@
 
             <a href="/categories/动漫情报/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">动漫情报</a>
 
-         
-
-            <a href="/categories/国产动漫/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">国产动漫</a>
-
         
     </nav>
     <!-- PC show more-->
@@ -196,7 +192,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/03/23/雏子的笔记/">音乐与视屏</a>
+      <a class="post-title-link" href="/2017/03/23/音乐与视屏/">音乐与视屏</a>
     </h3>
   
 
@@ -490,7 +486,18 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
-	<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
-	
+<canvas id="live2dcanvas" width="300" height="600" class="live2d"></canvas>
+<script type="text/javascript" src="/live2d/script"></script><script type="text/javascript">live2dStart("live2dcanvas","/live2d/z16/z16.model.json");</script>
+<style>
+.live2d{
+  position: fixed;
+	bottom: -30px;
+	right: 0px;
+	z-index: 999;
+	width: 150px;
+	height: 300px;
+  pointer-events: none;
+}
+</style>
 </body>
 </html>
